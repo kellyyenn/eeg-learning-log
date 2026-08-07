@@ -10,9 +10,15 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
+# Test / tooling caches
+.pytest_cache/
+
 # macOS
 .DS_Store
 
 # Editor
 .vscode/
 .idea/
+
+# Benchmark run logs (noisy, regenerable)
+results/log_*.txt
