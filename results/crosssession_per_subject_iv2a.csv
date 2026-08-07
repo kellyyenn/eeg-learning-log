@@ -1,0 +1,11 @@
+model,protocol,subject,kappa,balanced_accuracy
+CSP+LDA,"cross-session (T->E, official)",1,0.6574074074074074,0.7430555555555556
+CSP+LDA,"cross-session (T->E, official)",2,0.3564814814814815,0.5173611111111112
+FBCSP+SVM,"cross-session (T->E, official)",1,0.6666666666666667,0.75
+FBCSP+SVM,"cross-session (T->E, official)",2,0.42592592592592593,0.5694444444444444
+Riemann+TS+LR,"cross-session (T->E, official)",1,0.7222222222222222,0.7916666666666666
+Riemann+TS+LR,"cross-session (T->E, official)",2,0.43518518518518523,0.5763888888888888
+Riemann+MDM,"cross-session (T->E, official)",1,0.5972222222222222,0.6979166666666666
+Riemann+MDM,"cross-session (T->E, official)",2,0.3657407407407407,0.5243055555555556
+BandPower+RF,"cross-session (T->E, official)",1,0.3287037037037037,0.4965277777777778
+BandPower+RF,"cross-session (T->E, official)",2,0.02314814814814814,0.2673611111111111

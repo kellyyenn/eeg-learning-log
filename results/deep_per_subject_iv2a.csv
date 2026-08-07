@@ -1,0 +1,11 @@
+model,protocol,subject,kappa,balanced_accuracy
+EEGNet,"cross-session (T->E, official)",1,0.5972222222222222,0.6979166666666666
+EEGNet,"cross-session (T->E, official)",2,0.09722222222222221,0.3229166666666667
+ShallowConvNet,"cross-session (T->E, official)",1,0.5046296296296297,0.6284722222222222
+ShallowConvNet,"cross-session (T->E, official)",2,0.19907407407407407,0.3993055555555556
+DeepConvNet,"cross-session (T->E, official)",1,0.5509259259259259,0.6631944444444444
+DeepConvNet,"cross-session (T->E, official)",2,-0.01388888888888884,0.23958333333333334
+TinyLSTM,"cross-session (T->E, official)",1,-0.004629629629629539,0.2465277777777778
+TinyLSTM,"cross-session (T->E, official)",2,-0.0092592592592593,0.24305555555555552
+TinyTransformer,"cross-session (T->E, official)",1,0.4212962962962963,0.5659722222222222
+TinyTransformer,"cross-session (T->E, official)",2,0.05092592592592593,0.2881944444444444
