@@ -117,7 +117,7 @@ def fig_confusion(best_model: str):
         y_true, y_pred = z["y_true"], z[best_model]
         labels = np.unique(y_true)
         cm = confusion_matrix(y_true, y_pred, labels=labels, normalize="true")
-        fig, ax = plt.subplots(figsize=(6, 5.2))
+        fig, ax = plt.subplots(figsize=(6.6, 5.4))
         im = ax.imshow(cm, cmap="Blues", vmin=0, vmax=1)
         ax.set_xticks(range(len(labels)), labels, rotation=45, ha="right")
         ax.set_yticks(range(len(labels)), labels)
@@ -126,8 +126,8 @@ def fig_confusion(best_model: str):
                 ax.text(j, i, f"{cm[i,j]:.2f}", ha="center", va="center",
                         color="white" if cm[i, j] > 0.5 else "black")
         ax.set_xlabel("Predicted"); ax.set_ylabel("True")
-        ax.set_title(f"{best_model} — held-out confusion matrix (row-normalized)")
-        fig.colorbar(im)
+        ax.set_title(f"{best_model} — held-out confusion matrix\n(row-normalized; diagonal = recall)", fontsize=11)
+        fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
         plt.tight_layout()
         plt.savefig(FIGS / f"confusion_best_{TAG}.png", dpi=160)
         plt.close()
