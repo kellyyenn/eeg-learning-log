@@ -22,3 +22,6 @@ __pycache__/
 
 # Benchmark run logs (noisy, regenerable)
 results/log_*.txt
+
+# Local planning notes (not shipped)
+PLAN.md

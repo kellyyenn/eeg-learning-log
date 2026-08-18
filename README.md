@@ -4,8 +4,6 @@ A hands-on learning log for EEG / brain–computer-interface machine learning, b
 around **motor imagery** decoding. Everything runs on a **laptop CPU in minutes**
 and loads real public data **by code** — nothing downloaded by hand.
 
-See [PLAN.md](PLAN.md) for the full project plan and rationale.
-
 ## Results
 
 Ten decoders on **BCI Competition IV-2a**, 22 EEG channels, 4-class motor imagery
